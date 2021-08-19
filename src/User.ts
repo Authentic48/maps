@@ -14,4 +14,8 @@ export class User {
         lng: parseFloat(faker.address.longitude()),
       });
   }
+
+  marketContent(): string {
+    return `My name is ${this.name}`;
+  }
 }

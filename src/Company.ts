@@ -16,4 +16,8 @@ export class Company {
         lng: parseFloat(faker.address.longitude()),
       });
   }
+
+  marketContent(): string {
+    return ` ${this.catchPhrase}`;
+  }
 }
